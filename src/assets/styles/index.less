@@ -1,0 +1,17 @@
+@import url("./default.less");
+@import url("./reset.less");
+html body {
+  position: relative;
+  box-sizing: border-box;
+  height: calc(var(--vh, 1vh) * 100);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-size: var(--el-font-size-default);
+  color: var(--text-color);
+  background: var(--bg-color);
+}
+
+html body #root {
+  height: calc(var(--vh, 1vh) * 100);
+}

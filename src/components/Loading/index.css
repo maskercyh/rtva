@@ -1,0 +1,35 @@
+
+.loading-app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f2f5;
+}
+
+.loading-app {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 9999;
+}
+
+.loading-content {
+  text-align: center;
+}
+
+.loading-spinner {
+  margin-bottom: 20px;
+}
+
+.loading-text {
+  font-size: 1rem;
+}

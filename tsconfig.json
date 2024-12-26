@@ -1,0 +1,56 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "useDefineForClassFields": true,
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noUnusedLocals": true, // 有未使用的变量时，抛出错误
+    "noEmit": true,
+    "jsx": "react-jsx",
+    // paths
+    "baseUrl": ".",
+    "paths": {
+      "~@/*": [
+        "src/*"
+      ],
+      "~/*": [
+        "src/*"
+      ],
+      "@/*": [
+        "src/*"
+      ],
+      "~#/*": [
+        "src/enums/*"
+      ],
+      "#/*": [
+        "types/*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "src",
+    "server",
+    "types/**/*.d.ts"
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
+}
